@@ -4,4 +4,9 @@
         <TargetFramework>netcoreapp2.1</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\WingsOnApiCore.Models\WingsOnApiCore.Models.csproj" />
+      <ProjectReference Include="..\WingsOnApiCore.Repositories\WingsOnApiCore.Repositories.csproj" />
+    </ItemGroup>
+
 </Project>
