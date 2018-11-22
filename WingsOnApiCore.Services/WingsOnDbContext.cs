@@ -6,10 +6,12 @@ namespace WingsOnApiCore.Services
     public class WingsOnDbContext
     {
         public readonly IPersonRepository PersonRepository;
+        public readonly IAirlineRepository AirlineRepository;
 
         public WingsOnDbContext()
         {
             PersonRepository = new PersonRepository();
+            AirlineRepository = new AirlineRepository();
         }
     }
 }
