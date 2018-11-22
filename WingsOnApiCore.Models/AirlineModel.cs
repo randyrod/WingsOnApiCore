@@ -1,6 +1,6 @@
 namespace WingsOnApiCore.Models
 {
-    public class Airline : BaseModel
+    public class AirlineModel : BaseModel
     {
         public string Code { get; set; }
 

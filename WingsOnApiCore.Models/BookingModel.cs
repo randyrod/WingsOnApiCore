@@ -3,11 +3,11 @@ using System.Collections.Generic;
 
 namespace WingsOnApiCore.Models
 {
-    public class Booking : BaseModel
+    public class BookingModel : BaseModel
     {
         public string Number { get; set; }
 
-        public Flight Flight { get; set; }
+        public FlightModel Flight { get; set; }
 
         public PersonModel Customer { get; set; }
 

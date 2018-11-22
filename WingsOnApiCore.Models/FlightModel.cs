@@ -2,17 +2,17 @@ using System;
 
 namespace WingsOnApiCore.Models
 {
-    public class Flight : BaseModel
+    public class FlightModel : BaseModel
     {
         public string Number { get; set; }
 
-        public Airline Carrier { get; set; }
+        public AirlineModel Carrier { get; set; }
 
-        public Airport DepartureAirport { get; set; }
+        public AirportModel DepartureAirport { get; set; }
 
         public DateTime DepartureDate { get; set; }
 
-        public Airport ArrivalAirport { get; set; }
+        public AirportModel ArrivalAirport { get; set; }
 
         public DateTime ArrivalDate { get; set; }
 
