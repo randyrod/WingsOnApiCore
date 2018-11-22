@@ -29,7 +29,7 @@ namespace WingsOnApiCore.Repositories.Concrete
                 throw new ArgumentNullException($"The name cannot be null or empty");
             }
 
-            return Repository.FirstOrDefault(a => a.Name == airlineName);
+            return GetAll().FirstOrDefault(a => a.Name == airlineName);
         }
 
         public AirlineModel GetAirlineByCode(string airlineCode)
@@ -39,7 +39,7 @@ namespace WingsOnApiCore.Repositories.Concrete
                 throw new ArgumentNullException($"The code cannot be null or empty");
             }
 
-            return Repository.FirstOrDefault(a => a.Code == airlineCode);
+            return GetAll().FirstOrDefault(a => a.Code == airlineCode);
         }
     }
 }
